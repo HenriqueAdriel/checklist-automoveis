@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Recebimento de Veículo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Checklist de Recebimento de Veículo</h1>
+        <form id="checklistForm">
+            <fieldset>
+                <legend>Recebimento de Veículo</legend>
+                <label for="nomeCliente">Nome do cliente:</label>
+                <input type="text" id="nomeCliente" name="nomeCliente" required>
+                <label for="modeloVeiculo">Modelo do veículo:</label>
+                <input type="text" id="modeloVeiculo" name="modeloVeiculo" required>
+                <label for="responsavel">Responsável:</label>
+                <input type="text" id="responsavel" name="responsavel" required>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Conferência Física</legend>
+                <label for="literatura">Literatura de bordo:</label>
+                <input type="checkbox" id="literatura" name="literatura">
+                <label for="tacografo">Discos de tacógrafo:</label>
+                <input type="checkbox" id="tacografo" name="tacografo">
+                
+                <p>Combustível:</p>
+                <input type="radio" id="cheio" name="combustivel" value="Cheio">
+                <label for="cheio">Cheio</label>
+                <input type="radio" id="tresQuartos" name="combustivel" value="3/4">
+                <label for="tresQuartos">3/4</label>
+                <input type="radio" id="meia" name="combustivel" value="1/2">
+                <label for="meia">1/2</label>
+                <input type="radio" id="umQuarto" name="combustivel" value="1/4">
+                <label for="umQuarto">1/4</label>
+                <input type="radio" id="vazio" name="combustivel" value="Vazio">
+                <label for="vazio">Vazio</label>
+
+                <label for="alavanca">Alavanca:</label>
+                <input type="checkbox" id="alavanca" name="alavanca">
+                <label for="spoilerDianteiro">Spoiler dianteiro:</label>
+                <input type="checkbox" id="spoilerDianteiro" name="spoilerDianteiro">
+                <label for="extintor">Extintor:</label>
+                <input type="checkbox" id="extintor" name="extintor">
+                <label for="triangulo">Triângulo:</label>
+                <input type="checkbox" id="triangulo" name="triangulo">
+                <label for="pinoEngate">Pino engate:</label>
+                <input type="checkbox" id="pinoEngate" name="pinoEngate">
+                <label for="acendedorCigarros">Acendedor de cigarros:</label>
+                <input type="checkbox" id="acendedorCigarros" name="acendedorCigarros">
+                <label for="antena">Antena:</label>
+                <input type="checkbox" id="antena" name="antena">
+                <label for="mangueiraAr">Mangueira de ar:</label>
+                <input type="checkbox" id="mangueiraAr" name="mangueiraAr">
+                <label for="ferramentas">Ferramentas:</label>
+                <input type="checkbox" id="ferramentas" name="ferramentas">
+                <label for="radio">Rádio:</label>
+                <input type="checkbox" id="radio" name="radio">
+                <label for="tocaCd">Toca CD (MP3):</label>
+                <input type="checkbox" id="tocaCd" name="tocaCd">
+                <label for="documentos">Documentos:</label>
+                <input type="checkbox" id="documentos" name="documentos">
+                <label for="chavesTanque">Chaves tanque:</label>
+                <input type="checkbox" id="chavesTanque" name="chavesTanque">
+                <label for="rodocar">Rodocar:</label>
+                <input type="checkbox" id="rodocar" name="rodocar">
+                <label for="portaObjetos">Porta objetos:</label>
+                <input type="checkbox" id="portaObjetos" name="portaObjetos">
+                <label for="tampaReservatorio">Tampa reservatório:</label>
+                <input type="checkbox" id="tampaReservatorio" name="tampaReservatorio">
+                <label for="vidrosLaterais">Vidros laterais:</label>
+                <input type="checkbox" id="vidrosLaterais" name="vidrosLaterais">
+                <label for="tomadaLuz">Tomada de luz:</label>
+                <input type="checkbox" id="tomadaLuz" name="tomadaLuz">
+                <label for="equipamento">Equipamento:</label>
+                <input type="checkbox" id="equipamento" name="equipamento">
+                <label for="chavesContato">Chaves contato:</label>
+                <input type="checkbox" id="chavesContato" name="chavesContato">
+                <label for="varetaOleo">Vareta de óleo:</label>
+                <input type="checkbox" id="varetaOleo" name="varetaOleo">
+                <label for="paraBrisa">Para-brisa (Dianteiro/Traseiro):</label>
+                <input type="checkbox" id="paraBrisa" name="paraBrisa">
+                <label for="cabina">Cabina:</label>
+                <input type="checkbox" id="cabina" name="cabina">
+
+                <label for="pinturaDanificada">Pintura danificada:</label>
+                <input type="checkbox" id="pinturaDanificada" name="pinturaDanificada">
+                <label for="amassada">Amassada:</label>
+                <input type="checkbox" id="amassada" name="amassada">
+                <label for="forracaoBomEstado">Forração em bom estado:</label>
+                <input type="checkbox" id="forracaoBomEstado" name="forracaoBomEstado">
+                <label for="limpezaInternaExterna">Limpeza interna/Externa:</label>
+                <input type="checkbox" id="limpezaInternaExterna" name="limpezaInternaExterna">
+                <label for="vidrosBoasCondicoes">Vidros em boas condições:</label>
+                <input type="checkbox" id="vidrosBoasCondicoes" name="vidrosBoasCondicoes">
+                <label for="tacografoBoasCondicoes">Tacógrafo em boas condições:</label>
+                <input type="checkbox" id="tacografoBoasCondicoes" name="tacografoBoasCondicoes">
+                <label for="gradeBoaCondicao">Grade em boa condição:</label>
+                <input type="checkbox" id="gradeBoaCondicao" name="gradeBoaCondicao">
+                <label for="quebraSolBoaCondicao">Quebra-sol em boa condição:</label>
+                <input type="checkbox" id="quebraSolBoaCondicao" name="quebraSolBoaCondicao">
+                <label for="bancosCompletos">Bancos completos:</label>
+                <input type="checkbox" id="bancosCompletos" name="bancosCompletos">
+                <label for="estofamentosBomEstado">Estofamentos em bom estado:</label>
+                <input type="checkbox" id="estofamentosBomEstado" name="estofamentosBomEstado">
+                <label for="paraChoquesBoasCondicoes">Para-choques em boas condições:</label>
+                <input type="checkbox" id="paraChoquesBoasCondicoes" name="paraChoquesBoasCondicoes">
+                <label for="emblemasCompletos">Emblemas completos:</label>
+                <input type="checkbox" id="emblemasCompletos" name="emblemasCompletos">
+                <label for="cinzeiroFalante">Cinzeiro - Falante:</label>
+                <input type="checkbox" id="cinzeiroFalante" name="cinzeiroFalante">
+
+                <label for="eletricaBasica">Elétrica Básica:</label>
+                <input type="checkbox" id="eletricaBasica" name="eletricaBasica">
+                <label for="painelInstrumentos">Painel de instrumentos:</label>
+                <input type="checkbox" id="painelInstrumentos" name="painelInstrumentos">
+                <label for="luzFalhaAcesa">Luz de falha acesa:</label>
+                <input type="checkbox" id="luzFalhaAcesa" name="luzFalhaAcesa">
+                <label for="farois">Faróis:</label>
+                <input type="checkbox" id="farois" name="farois">
+                <label for="lanternas">Lanternas:</label>
+                <input type="checkbox" id="lanternas" name="lanternas">
+                <label for="luzesIndicadoras">Luzes indicadoras:</label>
+                <input type="checkbox" id="luzesIndicadoras" name="luzesIndicadoras">
+                
+                <p>Pneus:</p>
+                <label for="marcaModeloPneus">Mesma marca e modelo?</label>
+                <input type="checkbox" id="marcaModeloPneus" name="marcaModeloPneus">
+
+                <p>Dianteiros - Estado geral:</p>
+                <input type="radio" id="dianteirosBom" name="estadoDianteiros" value="Bom">
+                <label for="dianteirosBom">Bom</label>
+                <input type="radio" id="dianteirosMeiaVida" name="estadoDianteiros" value="1/2 vida">
+                <label for="dianteirosMeiaVida">1/2 vida</label>
+                <input type="radio" id="dianteirosRuim" name="estadoDianteiros" value="Ruim">
+                <label for="dianteirosRuim">Ruim</label>
+
+                <p>Traseiros - Estado geral:</p>
+                <input type="radio" id="traseirosBom" name="estadoTraseiros" value="Bom">
+                <label for="traseirosBom">Bom</label>
+                <input type="radio" id="traseirosMeiaVida" name="estadoTraseiros" value="1/2 vida">
+                <label for="traseirosMeiaVida">1/2 vida</label>
+                <input type="radio" id="traseirosRuim" name="estadoTraseiros" value="Ruim">
+                <label for="traseirosRuim">Ruim</label>
+
+                <p>Estepe - Estado geral:</p>
+                <input type="radio" id="estepeBom" name="estadoEstepe" value="Bom">
+                <label for="estepeBom">Bom</label>
+                <input type="radio" id="estepeMeiaVida" name="estadoEstepe" value="1/2 vida">
+                <label for="estepeMeiaVida">1/2 vida</label>
+                <input type="radio" id="estepeRuim" name="estadoEstepe" value="Ruim">
+                <label for="estepeRuim">Ruim</label>
+
+                <label for="equipamentosPossui">Possui equipamentos?</label>
+                <input type="checkbox" id="equipamentosPossui" name="equipamentosPossui">
+                <label for="equipamentosQual">Qual?</label>
+                <input type="text" id="equipamentosQual" name="equipamentosQual">
+                <label for="equipamentosEstadoGeral">Estado geral:</label>
+                <input type="text" id="equipamentosEstadoGeral" name="equipamentosEstadoGeral">
+                <label for="equipamentos">Equipamentos</label>
+                <input type="checkbox" id="equipamentos" name="equipamentos">
+
+                <label for="declaracao">Declaro que entreguei o veículo de acordo com as considerações relatadas neste termo.</label>
+                <input type="checkbox" id="declaracao" name="declaracao">
+            </fieldset>
+
+            <fieldset>
+                <legend>Declaração</legend>
+                <label for="assinaturaCliente">Assinatura do cliente:</label>
+                <input type="text" id="assinaturaCliente" name="assinaturaCliente" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Autorização de retirada do veículo</legend>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+                <label for="horaEntrada">Hora entrada:</label>
+                <input type="time" id="horaEntrada" name="horaEntrada" required>
+                <label for="placa">Placa:</label>
+                <input type="text" id="placa" name="placa" required>
+                <label for="cor">Cor:</label>
+                <input type="text" id="cor" name="cor" required>
+                <label for="horaSaida">Hora saída:</label>
+                <input type="time" id="horaSaida" name="horaSaida" required>
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo" required>
+                <label for="nOs">Nº OS:</label>
+                <input type="text" id="nOs" name="nOs" required>
+                <label for="consultorTecnico">Consultor técnico:</label>
+                <input type="text" id="consultorTecnico" name="consultorTecnico" required>
+                <label for="guincho">Guincho:</label>
+                <input type="text" id="guincho" name="guincho" required>
+            </fieldset>
+
+            <button type="button" id="downloadPdf">Download PDF</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
